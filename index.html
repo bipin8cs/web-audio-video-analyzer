@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .inputContainer{
+            
+            position: absolute;
+            width: 10rem;
+            background-color: #4834d4;
+            top: 3rem;
+            left: calc(100% - 10rem)/2;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2rem;
+        }
+        input{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="inputContainer">
+        Upload your audio files
+        <input type="file"  accept="audio/*" multiple>
+    </div>
+    
+    <audio ></audio>
+    <canvas></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
